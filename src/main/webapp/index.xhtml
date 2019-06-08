@@ -7,6 +7,7 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Avaliação</title>
+	
 </h:head>
 <h:body>
 	<p:growl id="msgs" showDetail="false" life="7000" sticky="false"
@@ -28,7 +29,7 @@
 			<p:inputText value="#{contaMB.edit.tipo}" />
 
 			<h:outputText value="Data de Vencimento: " />
-			<p:inputMask mask="99/99/9999" value="#{contaMB.edit.dtVencimento}"
+			<p:calendar value="#{contaMB.edit.dtVencimento}"
 				converter="#{dateConverter}" />
 
 			<h:outputText value="Situação:" />

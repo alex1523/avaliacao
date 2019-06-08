@@ -5,7 +5,7 @@ create table registro
 (id int primary key auto_increment not null,
  dsconta varchar (20) not null,
  tpconta varchar (20) not null, 
- dtvencimento varchar (8) not null,
+ dtvencimento date not null,
  situacao varchar (20) not null,
  dtcriacao datetime not null);
  
